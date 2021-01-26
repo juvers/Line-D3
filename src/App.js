@@ -25,8 +25,8 @@ function App() {
 
     return (
         <div className="App">
-            <h2>Graphs with React</h2>
-            <button onClick={changeData}>Change Data</button>
+            <h2>D3 with React Concept</h2>
+            <button className="btn btn-primary m-3" onClick={changeData}>Change Data</button>
             <BarChart width={600} height={400} data={data} />
         </div>
     );

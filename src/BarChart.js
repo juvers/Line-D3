@@ -25,7 +25,7 @@ function BarChart({ width, height, data }){
                             .range([0, height-100]);
         
         selection
-            .transition().duration(300)
+            .transition().duration(600)
                 .attr("height", (d) => yScale(d))
                 .attr("y", (d) => height - yScale(d))
 
@@ -36,7 +36,7 @@ function BarChart({ width, height, data }){
             .attr("y", (d) => height)
             .attr("width", 40)
             .attr("height", 0)
-            .attr("fill", "orange")
+            .attr("fill", "#f00")
             .transition().duration(300)
                 .attr("height", (d) => yScale(d))
                 .attr("y", (d) => height - yScale(d))
